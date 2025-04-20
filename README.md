@@ -54,11 +54,59 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 - From the “osTicket-Installation-Files” folder, install PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi)
 - From the “osTicket-Installation-Files” folder install the Rewrite Module (rewrite_amd64_en-US.msi)
+- From the “osTicket-Installation-Files” folder, install VC_redist.x86.exe.
+-Side bar just accept and hit okay for all the following software.
 
 <h2>Create the directory C:\PHP</h2>
-- unzip the file php-7.3.8-nts-Win32-VC15-x86.zip and extract all into the PHP file in the C:drive
+
+ unzip the file php-7.3.8-nts-Win32-VC15-x86.zip and extract all into the PHP file in the C:drive
 
 ![Screenshot 2025-04-15 190314](https://github.com/user-attachments/assets/753a2764-990c-4958-b1e8-79eb4ef7b879)
+
+- From the “osTicket-Installation-Files” folder, install MySQL 5.5.62 (mysql-5.5.62-win32.msi)
+- Typical Setup ->
+- Launch Configuration Wizard (after install)
+- Standard Configuration
+- Username: root
+- Password: root
+- Next Open IIS as an Admin
+- Register PHP from within IIS (PHP Manager -> C:\PHP\php-cgi.exe)
+- Reload IIS (Open IIS, Stop and Start the server)
+
+  ![Screenshot 2025-04-16 104953](https://github.com/user-attachments/assets/cb621686-0764-44ab-9df9-92327f7fe8a8)
+
+
+![Screenshot 2025-04-16 103141](https://github.com/user-attachments/assets/5cfac91a-d486-4e03-9ff3-ae0851ecd2f7)
+
+- Install osTicket v1.15.8
+- From the “osTicket-Installation-Files” folder, unzip “osTicket-v1.15.8.zip” and copy the “upload” folder into “c:\inetpub\wwwroot”
+- Within “c:\inetpub\wwwroot”, Rename “upload” to “osTicket”
+
+![Screenshot 2025-04-16 103959](https://github.com/user-attachments/assets/c0b02bee-c1b5-47ce-9ce9-999a28acb634)
+
+- Reload IIS (Open IIS, Stop and Start the server)
+- Go to sites -> Default -> osTicket
+- On the right, click “Browse *:80”
+
+ ![Screenshot 2025-04-16 104716](https://github.com/user-attachments/assets/36ec457e-5b2a-4a37-91f2-ec7ed780b037)
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
