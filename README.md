@@ -36,6 +36,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Password: osTicketPassword1!
 - Log into the VM with Remote Desktop
 - download, https://drive.google.com/uc?export=download&id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD
+- once downloaded, right click zipped file and extract all onto desktop
 - We will use the files in this folder to install osTicket and some of the dependencies
 - Go to control panel
 - In programs and features click "Turn on windows features on or off"
@@ -47,6 +48,17 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 ![Screenshot 2025-04-15 185146](https://github.com/user-attachments/assets/950026a5-aa75-46eb-a098-99b924b0f793)
 
+<h2> Installing Files </h2>
+
+![Screenshot 2025-04-15 190634](https://github.com/user-attachments/assets/52be80e6-2d0c-4e19-bde0-2cc4fe210082)
+
+- From the “osTicket-Installation-Files” folder, install PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi)
+- From the “osTicket-Installation-Files” folder install the Rewrite Module (rewrite_amd64_en-US.msi)
+
+<h2>Create the directory C:\PHP</h2>
+- unzip the file php-7.3.8-nts-Win32-VC15-x86.zip and extract all into the PHP file in the C:drive
+
+![Screenshot 2025-04-15 190314](https://github.com/user-attachments/assets/753a2764-990c-4958-b1e8-79eb4ef7b879)
 
 
 
