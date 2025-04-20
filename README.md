@@ -89,7 +89,55 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - On the right, click “Browse *:80”
 
  ![Screenshot 2025-04-16 104716](https://github.com/user-attachments/assets/36ec457e-5b2a-4a37-91f2-ec7ed780b037)
- 
+
+ - Go back to IIS, sites -> Default -> osTicket
+ - Double-click PHP Manager
+ - Click “Enable or disable an extension”
+ - Enable: php_imap.dll
+ - Enable: php_intl.dll
+ - Enable: php_opcache.dll
+ - Refresh the osTicket site in your browser, observe the changes
+
+ ![Screenshot 2025-04-16 105105](https://github.com/user-attachments/assets/6d66ad48-29e8-442b-b1b2-57ebcc4df51b)
+
+ - Rename: ost-config.php
+ - From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php
+ - To: C:\inetpub\wwwroot\osTicket\include\ost-config.php
+   
+![Screenshot 2025-04-16 111048](https://github.com/user-attachments/assets/9032c2ed-7938-42f2-9d5d-c4c224a3116e)
+
+- Assign Permissions: ost-config.php
+- Disable inheritance -> Remove All
+
+![Screenshot 2025-04-16 111412](https://github.com/user-attachments/assets/4d7bc354-fee0-40f5-a7e7-fa5ed43009b9)
+
+- New Permissions -> Everyone -> All
+
+![Screenshot 2025-04-16 111626](https://github.com/user-attachments/assets/562bcf04-d399-49ec-8528-cc5a85bb4ee1)
+
+- From the “osTicket-Installation-Files” folder, install HeidiSQL.
+  ![Screenshot 2025-04-16 112352](https://github.com/user-attachments/assets/ff9af5c6-308c-4e6f-9e27-a615618c0e30)
+
+- Open Heidi SQL
+![Screenshot 2025-04-16 112651](https://github.com/user-attachments/assets/9b758de1-a2b0-49b6-bc81-ca24d2ac0d54)
+
+- Create a new session, root/root
+- Connect to the session
+- Create a database called “osTicket”
+![Screenshot 2025-04-16 112820](https://github.com/user-attachments/assets/08eafe55-f888-4d4d-9dc2-d5b1c949f722)
+
+- Continue Setting up osTicket in the browser
+- MySQL Database: osTicket
+- MySQL Username: root
+- MySQL Password: root
+- Click “Install Now!”
+- Browse to your help desk login page: http://localhost/osTicket/scp/login.php
+![Screenshot 2025-04-16 125818](https://github.com/user-attachments/assets/73d2a9a3-df40-401a-8360-8835e75bb53d)
+
+
+
+
+
 
 
  
